@@ -1,0 +1,280 @@
+/* General Styles */
+:root {
+    --primary-color: #00bf63; /* Light Green */
+    --secondary-color: #f5f5f5; /* Light Gray */
+    --text-color: #333; /* Dark Gray for text */
+    --background-color: #fafafa; /* White background */
+    --button-color: #00bf63; /* Green for buttons */
+    --footer-bg-color: #343a40; /* Dark footer background */
+    --text-light: #fff; /* White for text in footer */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Cocogoose pro', sans-serif; /* Modern font */
+}
+
+/* Container and Layout */
+.container {
+    display: flex; 
+    align-items: stretch; 
+    justify-content: space-between; 
+}
+
+.row {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.fixed-top {
+    position: sticky; /* Or change to 'fixed' if you want the navbar to always be visible */
+    top: 0; 
+    z-index: 1020; /* Ensure the navbar stays above other content */
+    width: 100%; /* Full width of the viewport */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--footer-bg-color);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--text-light) !important; /* White text */
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-color) !important; /* Light Green on hover */
+}
+
+/* Banner Styles */
+.banner {
+    height: 400px;
+    background-size: cover;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+/* Banner Content Overlay */
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.h1, h2, h4, h5 {
+    font-weight: 'bold';
+    font-family: 'Cocogoose pro', sans-serif;
+}
+
+/* Card Styles */
+.card {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex; 
+    flex-direction: column; 
+    height: 100%; 
+    margin: 20px auto; 
+    max-width: 500px; 
+}
+
+.card-body {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding: 20px; 
+    border-radius: 8px; 
+    text-align: center; 
+}
+
+
+.card-text {
+    max-width: 100%; 
+    white-space: normal; 
+    overflow-wrap: break-word; 
+    line-height: 1.6; 
+    text-align: justify;
+}
+
+/* Contact Card Styles */
+.contact-card {
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 600px; 
+    text-align: left; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.contact-card h5 {
+    margin: 20px 0; 
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem; 
+}
+
+label {
+    margin-bottom: 0.5rem; 
+}
+
+input, textarea {
+    width: 100%; 
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--text-light);
+}
+
+/* Privacy Card */
+.privacy-card {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+    display: flex; 
+    flex-direction: column; 
+    height: 100%; 
+    margin: 20px auto; 
+}
+
+.privacy-card-body {
+    width: 750px; 
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding: 20px; 
+    text-align: justify; 
+    margin: 0 10px;
+}
+
+/* Rounded Image */
+.rounded-image {
+    max-width: 100%; 
+    max-height: 600px; 
+    height: auto; 
+    border-radius: 15px; 
+    object-fit: cover; 
+    margin: 0 auto;
+}
+
+/* Step Styles */
+.step {
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 10px 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Section Styles */
+.section {
+    min-height: 1000px; 
+    padding: 20px; 
+    margin: 60px 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px; 
+    margin-bottom: 60px; /* Space below each section */
+}
+
+.elevate-section {
+    min-height: 750px; 
+    padding: 20px; 
+    margin: 60px 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px; 
+    margin-bottom: 60px; /* Space below each section */
+}
+
+
+.contact-section, .services-section {
+    min-height: 750px; 
+    padding: 20px; 
+    margin: 60px 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 10px; 
+}
+
+.contact-section {
+    background: linear-gradient(to right, #fafafa, #5e17eb30);
+}
+
+.services-section {
+    background: linear-gradient(to left, #fafafa, #00bf6330);
+}
+
+/* New Approach Section Styles */
+.new-approach-card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect for card */
+    border: none; /* No border */
+    margin-bottom: 30px; /* Space between cards */
+    margin-top: 30px; /* Space between cards */
+    text-align: center; /* Center text in card */
+}
+
+.full-width-image {
+    width: 500px; /* Make the image span the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image behaves like a block element */
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.violet-purple { color: '#5e17eb';}
+
+/* Core Values Section Styles */
+.core-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    gap: 20px; /* Space between grid items */
+    margin: 40px 0; /* Spacing above and below the grid */
+}
+
+.core-value {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; /* Center the text */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.core-value:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.core-value h3 {
+    font-weight: bold; /* Emphasis on the number */
+    color: var(--primary-color);
+}
+
+.core-value h4 {
+    margin: 10px 0; /* Space around the title */
+}
+
+.core-value p {
+    font-size: 0.95rem; /* Slightly smaller font for description */
+    color: var(--text-color); /* Use theme color for text */
+}
